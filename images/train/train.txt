@@ -1,0 +1,12 @@
+./images/train/0.apple/1.jpg 0
+./images/train/0.apple/2.jpg 0
+./images/train/0.apple/207747002_37e2540d6c.jpg 0
+./images/train/0.apple/2260615381_e9812d45a9.jpg 0
+./images/train/0.apple/3.jpg 0
+./images/train/0.apple/4.jpg 0
+./images/train/1.banana/123460495_ed7532c980.jpg 1
+./images/train/1.banana/891224785_19e27b9768.jpg 1
+./images/train/1.banana/a.jpg 1
+./images/train/1.banana/b.jpg 1
+./images/train/1.banana/c.jpg 1
+./images/train/1.banana/d.jpg 1
