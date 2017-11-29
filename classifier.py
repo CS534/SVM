@@ -6,7 +6,6 @@ import numpy as np
 
 
 def get_label(path='./images/train/labels.txt'):
-    """ Get cifar10 class label"""
     with open(path, 'r') as f:
         names = f.readlines()
     names = [n.strip() for n in names]
