@@ -1,6 +1,2 @@
-./images/test/0.apple/6.jpg 0
-./images/test/0.apple/7.jpg 0
-./images/test/0.apple/WoWScrnShot_040312_031532.jpg 0
-./images/test/1.banana/h.jpg 1
-./images/test/1.banana/t.jpg 1
-./images/test/1.banana/WoWScrnShot_040312_031532.jpg 1
+./images/test/0.apple/Image_20171203185643.jpg 0
+./images/test/1.banana/19456670_ef21aec031.jpg 1

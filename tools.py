@@ -7,11 +7,13 @@ def path_getter(path, file_name):
     dirs = os.path.join(path, "*")
     dirs = glob(dirs)
     paths = [glob("{}/*.jpg".format(dir)) for dir in dirs]
+    for dir in dirs:
+        paths.append(glob("{}/*)".format(dir)))
     x, y = [], []
     for directory in paths:
         for path in directory:
             path = '/'.join(path.split('\\'))
-            print(path)
+            # print(path)
             x.append(path)
             y.append(os.path.dirname(path).split('/')[-1].split('.')[0])
     with open(os.path.dirname(dirs[0]) + '/' + file_name, 'w')as f:
@@ -20,6 +22,4 @@ def path_getter(path, file_name):
     return x, y
 
 
-if __name__ == '__main__':
-    path_getter('./images/train', 'train.txt')
-    path_getter('./images/test', 'test.txt')
+

@@ -2,7 +2,7 @@ from utils import load_my_data
 from utils import extract_DenseSift_descriptors
 from utils import build_codebook
 from utils import input_vector_encoder
-from classifier import svm_classifier
+from classifier import knn_classifier
 import spm
 
 import numpy as np
@@ -39,4 +39,4 @@ if __name__ == '__main__':
     X = [spm.spatial_pyramid_matching(X[i], x_des[i], codebook, level=spm.PYRAMID_LEVEL) for i in range(len(x_des))]
 
     X = np.asarray(X)
-    svm_classifier(X, y)
+    knn_classifier(X, y)

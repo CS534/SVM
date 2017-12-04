@@ -2,13 +2,15 @@ from utils import load_cifar10_data
 from utils import extract_sift_descriptors
 from utils import build_codebook
 from utils import input_vector_encoder
-from classifier import svm_classifier
-
+from classifier import *
+from tools import path_getter
 import numpy as np
 
 VOC_SIZE = 100
 
 if __name__ == '__main__':
+    path_getter('./images/train', 'train.txt')
+    path_getter('./images/test', 'test.txt')
     # Training
     x_train, y_train = load_cifar10_data(dataset='train')
     x_test, y_test = load_cifar10_data(dataset='test')
@@ -40,4 +42,6 @@ if __name__ == '__main__':
     x_test = [input_vector_encoder(each, codebook) for each in x_test]
     x_test = np.asarray(x_test)
 
-    svm_classifier(x_train, y_train, x_test, y_test)
+    # svc_classifier(x_train, y_train, x_test, y_test)
+    # knn_classifier(x_train, y_train, x_test, y_test)
+    classifiers(x_train, y_train, x_test, y_test)

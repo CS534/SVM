@@ -2,7 +2,7 @@ from utils import load_cifar10_data
 from utils import extract_DenseSift_descriptors
 from utils import build_codebook
 from utils import input_vector_encoder
-from classifier import svm_classifier
+from classifier import knn_classifier
 
 import numpy as np
 
@@ -101,4 +101,4 @@ if __name__ == '__main__':
     x_train = np.asarray(x_train)
     x_test = np.asarray(x_test)
 
-    svm_classifier(x_train, y_train, x_test, y_test)
+    knn_classifier(x_train, y_train, x_test, y_test)
